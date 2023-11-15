@@ -27,7 +27,7 @@ struct SettingsRowView: View {
 }
 
 #Preview {
-    SettingsRowView(imageName: "gear", 
+    SettingsRowView(imageName: "questionmark",
                     title: "Placeholder",
                     tintColor: Color(.systemGray))
 }

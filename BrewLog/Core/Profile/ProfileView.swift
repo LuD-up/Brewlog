@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ProfileView: View {
-    let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "N/A"
     
     var body: some View {
         List {
@@ -35,18 +34,13 @@ struct ProfileView: View {
                 }
             }
             
-            Section("General") {
-                HStack {
-                    SettingsRowView(imageName: "gear",
-                                    title: "Version",
-                                    tintColor: Color(.systemGray))
-                    Spacer()
-                    
-                    Text(appVersion)
-                        .font(.subheadline)
-                        .foregroundStyle(.gray)
-                                        
-                    Image(systemName: "chevron.right")
+            NavigationStack {
+                NavigationLink(destination: AboutView()) {
+                    HStack {
+                        SettingsRowView(imageName: "questionmark.circle",
+                                        title: "À propos",
+                                        tintColor: Color(.systemGray))
+                    }
                 }
             }
             
