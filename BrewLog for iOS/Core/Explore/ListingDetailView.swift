@@ -49,7 +49,7 @@ struct ListingDetailView: View {
                 Text("Description")
                     .foregroundStyle(.gray)
                 
-                Text("Description de la bière...")
+                Text("Une bière rafraîchissante brassée avec des fleurs d’hibiscus et du poivre de Madagascar aux légères notes de pamplemousse, une aromatique exotique mémorable.")
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
