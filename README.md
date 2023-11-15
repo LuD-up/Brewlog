@@ -1,4 +1,4 @@
-# 🍺 BrewLog - Learn iOS Development 📱
+# 🍺 BrewLog - Learning iOS Development
 
 [![Swift Version](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](https://developer.apple.com/ios/)
