@@ -61,6 +61,7 @@ struct SecurityPrivacy: View {
             .padding()
             
             Divider()
+                .background(.border)
             
             HStack {
                 HStack(spacing: 16) {

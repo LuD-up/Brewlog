@@ -22,10 +22,12 @@ struct ExploreView: View {
                     VStack {
                         // Navigation bar
                         HStack {
-                            Image("profil-1")
-                                .resizable()
-                                .frame(width: 48, height: 48)
-                                .cornerRadius(24)
+                            NavigationLink(destination: ProfileView()) {
+                                Image("profil-1")
+                                    .resizable()
+                                    .frame(width: 48, height: 48)
+                                    .cornerRadius(24)
+                            }
                                 
                             Spacer()
                             
@@ -77,7 +79,7 @@ struct ExploreView: View {
                                         .cornerRadius(16)
                                         .font(.callout)
                                         .fontWeight(.semibold)
-                                        .foregroundStyle(.accentDark)
+                                        .foregroundStyle(.brandDark)
                                         .padding()
                                 }
                             }
@@ -103,6 +105,7 @@ struct ExploreView: View {
                                 Text("Événements à venir")
                                     .font(.title2)
                                     .fontWeight(.bold)
+                                    .foregroundStyle(.text)
                                     .padding(.leading, 20.0)
                                 
                                 Spacer()
@@ -130,6 +133,7 @@ struct ExploreView: View {
                                 Text("Actualité")
                                     .font(.title2)
                                     .fontWeight(.bold)
+                                    .foregroundStyle(.text)
                                 
                                 Spacer()
                                 

@@ -30,12 +30,13 @@ struct AboutView: View {
                         Image(systemName: "link")
                             .frame(width: 32, height: 32)
                     }
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.text)
                 }
                 .padding()
 
                 
                 Divider()
+                    .background(.border)
                 
                 NavigationLink(destination: PrivacyPolicyView()) {
                     HStack {
@@ -47,7 +48,7 @@ struct AboutView: View {
                         
                         Image(systemName: "chevron.right")
                     }
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.text)
                     .padding()
                 }
                 
@@ -61,7 +62,7 @@ struct AboutView: View {
                         
                         Image(systemName: "chevron.right")
                     }
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.text)
                     .padding()
                 }
                 
@@ -72,7 +73,7 @@ struct AboutView: View {
                     Text(appVersion)
                 }
                 .font(.subheadline)
-                .foregroundStyle(.gray)
+                .foregroundStyle(.textSecondary)
                 .frame(maxWidth: .infinity, alignment: .center)
             }
             .padding()

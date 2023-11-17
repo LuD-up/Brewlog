@@ -65,7 +65,7 @@ struct BeerDetailView: View {
                 
             } label: {
                 Text("Selectionner")
-                    .foregroundStyle(.accentDark)
+                    .foregroundStyle(.brandDark)
                     .font(.callout)
                     .fontWeight(.semibold)
                     .frame(maxWidth: .infinity)

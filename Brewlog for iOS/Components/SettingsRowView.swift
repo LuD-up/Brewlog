@@ -10,24 +10,22 @@ import SwiftUI
 struct SettingsRowView: View {
     let imageName: String
     let title: String
-    let tintColor: Color
     
     var body: some View {
         HStack(spacing: 12) {
             Image(systemName: imageName)
                 .imageScale(.small)
                 .font(.title)
-                .foregroundColor(tintColor)
+                .foregroundColor(.text)
             
             Text(title)
                 .font(.subheadline)
-                .foregroundStyle(.black)
+                .foregroundStyle(.text)
         }
     }
 }
 
 #Preview {
     SettingsRowView(imageName: "questionmark",
-                    title: "Placeholder",
-                    tintColor: Color(.systemGray))
+                    title: "Placeholder")
 }
