@@ -52,7 +52,6 @@ struct SettingsView: View {
                                         title: "Devenir membre premium",
                                         tintColor: Color(.systemGray))
                     }
-                    .border(Color.yellow)
                 }
                 
                 Section {
