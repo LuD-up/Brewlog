@@ -70,7 +70,7 @@ struct BeerDetailView: View {
                     .fontWeight(.semibold)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 16)
-                    .background(.accent)
+                    .background(.brand)
                     .cornerRadius(16)
                     .padding()
             }
