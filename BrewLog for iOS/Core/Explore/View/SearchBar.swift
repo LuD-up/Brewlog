@@ -13,11 +13,12 @@ struct SearchBar: View {
             Image(systemName: "magnifyingglass")
                 .resizable()
                 .frame(width: 24, height: 24)
+                .foregroundStyle(.text)
             
             Text("Chercher une bière, un bar...")
                 .font(.body)
                 .lineLimit(1)
-                .foregroundStyle(.gray)
+                .foregroundStyle(.textSecondary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(16)

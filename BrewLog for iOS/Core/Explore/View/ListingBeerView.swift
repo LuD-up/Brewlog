@@ -22,10 +22,12 @@ struct ListingBeerView: View {
             Text(listing.name)
                 .font(.title2)
                 .fontWeight(.bold)
+                .foregroundStyle(.text)
                 .padding(.top, 16)
             
             Text("Brasserie \(listing.brewery)")
                 .font(.subheadline)
+                .foregroundStyle(.textSecondary)
         }
         .padding(20)
         .frame(width: 200)

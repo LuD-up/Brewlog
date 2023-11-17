@@ -24,9 +24,11 @@ struct ArticleDetailView: View {
                 Text(listing.title)
                     .font(.title)
                     .fontWeight(.bold)
+                    .foregroundStyle(.text)
                 
                 Text(listing.date)
                     .font(.subheadline)
+                    .foregroundStyle(.textSecondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -34,13 +36,13 @@ struct ArticleDetailView: View {
             VStack(alignment: .leading, spacing: 10) {
                 
                 Text(listing.content)
+                    .foregroundStyle(.text)
                     .padding(.vertical, 40)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
         .scrollIndicators(.hidden)
         .padding()
-        .background(.bgPrimary)
     }
 }
 

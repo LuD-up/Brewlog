@@ -24,15 +24,17 @@ struct BeerDetailView: View {
                 Text(listing.name)
                     .font(.title)
                     .fontWeight(.bold)
+                    .foregroundStyle(.text)
                 
                 Text("Brasserie \(listing.brewery)")
                     .font(.headline)
+                    .foregroundStyle(.textSecondary)
             }
             
             HStack {
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Type de bière")
-                        .foregroundStyle(.gray)
+                        .foregroundStyle(.textSecondary)
                     
                     Text(listing.type)
                         .font(.headline)
@@ -42,7 +44,7 @@ struct BeerDetailView: View {
                 
                 VStack(alignment: .trailing, spacing: 10) {
                     Text("Alcool (%)")
-                        .foregroundStyle(.gray)
+                        .foregroundStyle(.textSecondary)
                     
                     Text(listing.abv)
                         .font(.headline)
@@ -52,7 +54,7 @@ struct BeerDetailView: View {
             
             VStack(alignment: .leading, spacing: 10) {
                 Text("Description")
-                    .foregroundStyle(.gray)
+                    .foregroundStyle(.textSecondary)
                 
                 Text(listing.description)
             }
@@ -63,17 +65,16 @@ struct BeerDetailView: View {
                 
             } label: {
                 Text("Selectionner")
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.accentDark)
                     .font(.callout)
                     .fontWeight(.semibold)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 16)
-                    .background(.caca)
+                    .background(.accent)
                     .cornerRadius(16)
                     .padding()
             }
         }
-        .background(.bgPrimary)
     }
 }
 

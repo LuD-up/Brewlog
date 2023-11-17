@@ -22,11 +22,13 @@ struct ListingArticleView: View {
                 Text(listing.title)
                     .font(.title2)
                     .fontWeight(.bold)
+                    .foregroundStyle(.text)
                     .multilineTextAlignment(.leading)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Text(listing.date)
                     .font(.subheadline)
+                    .foregroundStyle(.textSecondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
