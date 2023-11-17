@@ -19,7 +19,7 @@ struct ArticleDetailView: View {
                 .frame(maxWidth: .infinity)
                 .clipShape(RoundedRectangle(cornerRadius: 25.0))
             
-            // Beer details
+            // Article details
             VStack(spacing: 10) {
                 Text(listing.title)
                     .font(.title)
@@ -47,5 +47,5 @@ struct ArticleDetailView: View {
 }
 
 #Preview {
-    ArticleDetailView(listing: DeveloperPreview.shared.articles[1])
+    ArticleDetailView(listing: DeveloperPreview.shared.articles[0])
 }

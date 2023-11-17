@@ -29,7 +29,7 @@ struct ExploreView: View {
                                 
                             Spacer()
                             
-                            NavigationLink(destination: ProfileView()) {
+                            NavigationLink(destination: SettingsView()) {
                                 ZStack {
                                     Circle()
                                         .fill(Color.backgroundElevated)
